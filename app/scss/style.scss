@@ -556,6 +556,15 @@
     max-height: 1148px;
     height: 100%;
   }
+  &.gallery-page {
+    .gallery__item img{
+      max-height: 1165px;
+    }
+    .gallery__item:nth-child(8) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
 }
 
 .blog-box {
@@ -636,11 +645,11 @@
   }
   &__text {
     padding-left: 284px;
-    p{
+    p {
       margin-bottom: 30px;
     }
   }
-  &__popup{
+  &__popup {
     background-image: url(../images/video-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -652,11 +661,11 @@
   }
 }
 
-.inspiration{
+.inspiration {
   padding-top: 100px;
   position: relative;
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
@@ -665,16 +674,16 @@
     height: 414px;
     z-index: -1;
   }
-  &__inner{
+  &__inner {
     display: flex;
     justify-content: center;
     padding-bottom: 38px;
   }
-  &__images{
+  &__images {
     margin-right: 78px;
     margin-left: -230px;
   }
-  &__title{
+  &__title {
     font-size: 36px;
     line-height: 60px;
     @extend %title-font;
@@ -682,8 +691,8 @@
     padding-bottom: 16px;
     margin-bottom: 24px;
     position: relative;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       left: 0;
       bottom: 0;
@@ -692,26 +701,26 @@
       width: 200px;
     }
   }
-  &__text{
+  &__text {
     margin-bottom: 30px;
   }
-  &__content{
+  &__content {
     max-width: 824px;
   }
-  &__item{
+  &__item {
     color: $title;
     line-height: 23px;
     @extend %title-font;
     margin-bottom: 33px;
   }
-  &__item-content{
+  &__item-content {
     display: flex;
     justify-content: space-between;
     padding-bottom: 14px;
     border-bottom: 2px solid #fff;
     border-radius: 4px;
   }
-  &__line{
+  &__line {
     height: 2px;
     border-radius: 4px;
     background-color: $title;
@@ -719,13 +728,13 @@
   }
 }
 
-.partners{
+.partners {
   padding: 16px 0 60px;
-  &__items{
+  &__items {
     display: grid;
-    grid-template-columns: repeat(5, 1fr );
+    grid-template-columns: repeat(5, 1fr);
   }
-  &__item{
-    margin: 0 auto;;
+  &__item {
+    margin: 0 auto;
   }
 }
