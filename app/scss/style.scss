@@ -18,6 +18,9 @@
     cursor: pointer;
     outline: none;
   }
+  &__btn-menu{
+    display: none;
+  }
 }
 
 .logo {
@@ -243,6 +246,11 @@
   &__link {
     font-size: 14px;
     color: $default;
+    overflow-x: auto;
+  }
+  &__item{
+    position: relative;
+    padding-right: 8px;
   }
   &__list {
     display: flex;
@@ -252,8 +260,8 @@
   }
   &__item::after {
     content: "/";
-    margin-left: -4px;
-    margin-right: 4px;
+    position: absolute;
+   
   }
 }
 
@@ -1280,3 +1288,5 @@
     cursor: pointer;
   }
 }
+
+@import 'media';

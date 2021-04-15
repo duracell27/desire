@@ -10,12 +10,14 @@ body {
   font-weight: 400;
   color: $default;
   overflow-x: hidden;
-  min-width: 320px;
+  min-width: 290px;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .main {
