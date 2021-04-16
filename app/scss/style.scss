@@ -735,6 +735,9 @@
 .map {
   margin-top: -53px;
   margin-bottom: 50px;
+  iframe{
+    height: 578px;
+  }
 }
 
 .contact {
@@ -867,6 +870,15 @@
     @extend %title-font;
     opacity: 0;
   }
+  .slick {
+    &-slide {
+      margin: 0 5px;
+    }
+    
+    &-list {
+      margin-left: -5px;
+      margin-right: -5px;
+    }}
 }
 
 .blog {
